@@ -9,6 +9,10 @@ const api_key = 'MMA'
 app.use(cors())
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send({status : "success"})
+});
+
 app.post('/adduser', (req, res) => {
     const apiKey = req.get('x-api-key')
     if (apiKey == api_key) {
