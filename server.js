@@ -11,6 +11,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send({status : "success"})
+    res.end()
 });
 
 app.post('/adduser', (req, res) => {
