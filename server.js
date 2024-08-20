@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     res.send({status : "success"})
     res.end()
 });
+app.get('/teste', (req, res) => {
+    res.send({status : "success"})
+    res.end()
+});
 
 app.post('/adduser', (req, res) => {
     const apiKey = req.get('x-api-key')
